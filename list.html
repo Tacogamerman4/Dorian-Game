@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LowTaperGames</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .game-link {
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
+  <style>
+    .btn, .game-link {
+        display: inline-block;
+        padding: 12px 16px;
+        background-color: #1e40af; /* Tailwind's blue-800 */
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 8px;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none; /* Removes underline */
+    }
 
-        .game-link:hover {
-            background-color: #3b82f6; /* Tailwind's blue-500 */
-            transform: scale(1.1) rotate(3deg) translateY(-4px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    .btn:hover, .game-link:hover {
+        background-color: #3b82f6; /* Tailwind's blue-500 */
+        transform: scale(1.1) rotate(3deg) translateY(-4px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
 </head>
 <body class="bg-black text-white">
     <div class="container mx-auto py-10 text-center">
