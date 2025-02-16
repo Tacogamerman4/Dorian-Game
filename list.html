@@ -5,41 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LowTaperGames</title>
     <script src="https://cdn.tailwindcss.com"></script>
-      <style>
-        body {
-            background-color: #121212;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .search-container {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        #gsearchbar {
-            width: 200px;
-            padding: 10px;
-            border: 1px solid #333;
-            border-radius: 8px;
-            background-color: #1e1e1e;
-            color: #fff;
-            outline: none;
-            transition: all 0.3s ease-in-out;
-        }
-        #gsearchbar::placeholder {
-            color: #888;
-        }
-        #gsearchbar:focus {
-            border-color: #888;
-            background-color: #252525;
-        }
-    </style>
-</head>
-    <div class="search-container">
-        <input type="text" id="gsearchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="Search" />
-    </div>
   <style>
     .btn, .a, .game-link {
         display: inline-block;
