@@ -1,4 +1,3 @@
-<h6>
     $apps = @(
     "notepad.exe",
     "mspaint.exe",
@@ -18,4 +17,3 @@ foreach ($app in $apps) {
         }
     } -ArgumentList $app
 }
-</h6>
